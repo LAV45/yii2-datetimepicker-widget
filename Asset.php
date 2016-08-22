@@ -23,33 +23,28 @@ use yii\web\AssetBundle;
  */
 class Asset extends AssetBundle
 {
-
     /**
      * @var string
      */
-    public $sourcePath = '@vendor';
-
+    public $sourcePath = '@bower/eonasdan-bootstrap-datetimepicker/build';
+    /**
+     * @var array
+     */
+    public $css = [
+        'css/bootstrap-datetimepicker.min.css'
+    ];
+    /**
+     * @var array
+     */
+    public $js = [
+        'js/bootstrap-datetimepicker.min.js'
+    ];
     /**
      * @var array
      */
     public $depends = [
         'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapAsset',
+        'brussens\datetimepicker\MomentAsset',
     ];
-
-    /**
-     * @var array
-     */
-    public $css = [
-        'eonasdan/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css'
-    ];
-
-    /**
-     * @var array
-     */
-    public $js = [
-        'moment/moment/min/moment-with-locales.min.js',
-        'eonasdan/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'
-    ];
-
-} 
+}
