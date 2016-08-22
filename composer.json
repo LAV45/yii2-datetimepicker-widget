@@ -15,8 +15,8 @@
         "source": "https://github.com/brussens/yii2-datetimepicker-widget"
     },
     "require": {
-        "yiisoft/yii2": "*",
-        "eonasdan/bootstrap-datetimepicker": "*"
+        "yiisoft/yii2": "2.0.*",
+        "bower-asset/eonasdan-bootstrap-datetimepicker": "dev-master as 4.x-@dev"
     },
     "autoload": {
         "psr-4": {
